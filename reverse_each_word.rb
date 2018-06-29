@@ -1,9 +1,7 @@
 def reverse_each_word(sentence)
-  reversed = []
-  sentence.split.each do |word|
-    
-  end
-  reversed.join(' ')
+  reversed = (sentence.split.map do |word|
+    word.reverse
+  end).join(' ')
 end
-  
-reverse_each_word()
+
+puts reverse_each_word("This is a sentence to reverse the words of")
